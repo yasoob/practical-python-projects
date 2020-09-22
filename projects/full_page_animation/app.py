@@ -57,7 +57,11 @@ def main(url, output):
     driver.close()
 
     clip = ImageClip('website_image.png')
-    bg_clip = ColorClip(size=(1600,1000), color=[228, 220, 220])
+    
+    video_width = int(clip.size[0] + 800)
+    video_height = int(video_width/1.5)
+
+    bg_clip = ColorClip(size=(video_width, video_height), color=[228, 220, 220])
 
     scroll_speed = 180
     total_duration = (clip.h - 800)/scroll_speed
