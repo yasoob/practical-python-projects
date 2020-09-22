@@ -1,0 +1,5 @@
+newspaper3k==0.2.8
+numpy==1.19.2
+requests==2.24.0
+requests-file==1.5.1
+sumy==0.8.1

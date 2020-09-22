@@ -1,0 +1,4 @@
+Flask==0.12.2
+twilio==6.14.6
+requests==2.18.4
+python-dateutil==2.6.1

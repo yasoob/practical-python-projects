@@ -1,0 +1,2 @@
+google==3.0.0
+tmdbsimple==2.6.6
