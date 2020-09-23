@@ -21,8 +21,4 @@
 # If you feel your use of code examples falls outside fair use of the permission
 # given here, please contact me at hi@yasoob.me.
 
-mkdir invoice-generator
-cd invoice-generator
-python -m venv env
-source env/bin/activate
-touch requirements.txt
+pip install sumy wand newspaper3k requests numpy

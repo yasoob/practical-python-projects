@@ -21,7 +21,7 @@
 # If you feel your use of code examples falls outside fair use of the permission
 # given here, please contact me at hi@yasoob.me.
 
-Flask==0.12.2
-twilio==6.14.6
-requests==2.18.4
-python-dateutil==2.6.1
+Flask==1.1.2
+python-dateutil==2.8.1
+requests==2.24.0
+twilio==6.45.2

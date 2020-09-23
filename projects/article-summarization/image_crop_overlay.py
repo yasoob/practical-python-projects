@@ -5,7 +5,7 @@ from wand.display import display
 from wand.font import Font
 import requests
 
-image_url = 'https://imgur.com/ei2vN5v.jpg'
+image_url = 'https://i.imgur.com/YobrZ8r.png'
 image_blob = requests.get(image_url)
 with Image(blob=image_blob.content) as img:
     print(img.size)
@@ -21,7 +21,6 @@ with Image(blob=image_blob.content) as img:
 width = size[0]
 height = size[1]
 aspect = width/height
-CAPTION = "A sample test caption for the cropped images"
 CAPTION = ("For the past four years, this "
            "experimental non-profit school has been quietly "
            "educating Musk’s sons, the children of select "
@@ -50,7 +49,7 @@ with Image(blob=image_blob.content) as canvas:
     canvas.crop(*resize[0])
     print(canvas.width)
     canvas.font = Font("SanFranciscoDisplay-Bold.otf", 
-                        size=73, 
+                        size=53, 
                         color=Color('white'))
     caption_width = int(canvas.width/1.2)
     margin_left = int((canvas.width-caption_width)/2)
@@ -64,12 +63,12 @@ with Image(blob=image_blob.content) as canvas:
 with Image(blob=image_blob.content) as canvas:
     canvas.crop(*resize[1])
     canvas.font = Font("SanFranciscoDisplay-Bold.otf", 
-                        size=73, 
-                        color=Color('black'))
+                        size=53, 
+                        color=Color('white'))
     caption_width = int(canvas.width/1.2)
     margin_left = int((canvas.width-caption_width)/2)
-    margin_top = int(canvas.height/2)
-    canvas.caption(CAPTION, gravity='center', 
+    margin_top = int(30)
+    canvas.caption(CAPTION, gravity='north', 
                    width=caption_width, left=margin_left,
                    top=margin_top)
     canvas.format = "jpg"
