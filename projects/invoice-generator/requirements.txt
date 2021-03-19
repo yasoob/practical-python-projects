@@ -10,7 +10,7 @@ html5lib==1.1
 itsdangerous==1.1.0
 Jinja2==3.0.0a1
 MarkupSafe==2.0.0a1
-Pillow==7.2.0
+Pillow==8.1.1
 pycparser==2.20
 Pyphen==0.9.5
 six==1.15.0
