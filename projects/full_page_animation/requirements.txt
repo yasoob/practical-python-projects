@@ -12,5 +12,5 @@ proglog==0.1.9
 requests==2.24.0
 requests-file==1.5.1
 tqdm==4.49.0
-urllib3==1.25.10
+urllib3==1.26.5
 selenium==3.141.0
