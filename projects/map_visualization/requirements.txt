@@ -23,7 +23,7 @@ jupyter-console==6.2.0
 jupyter-core==4.6.3
 jupyterlab-pygments==0.1.1
 MarkupSafe==2.0.0a1
-mistune==0.8.4
+mistune==2.0.3
 nbconvert==6.0.5
 nbformat==5.0.7
 notebook==6.1.4
