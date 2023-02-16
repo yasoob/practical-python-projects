@@ -17,4 +17,4 @@ six==1.15.0
 tinycss2==1.0.2
 WeasyPrint==51
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
